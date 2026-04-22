@@ -346,7 +346,7 @@ export default function App() {
                       <div style={{ display:"flex", gap:12 }}>
                         <div style={{ width:4, borderRadius:4, background:"linear-gradient(180deg,#fbbf24,#f59e0b)", flexShrink:0 }} />
                         <div style={{ flex:1 }}>
-                          <div style={{ fontSize:15, color:"#f8fafc", lineHeight:1.6, whiteSpace:"pre-wrap", wordBreak:"break-all" }}>{m.text}</div>
+                          <div style={{ fontSize:20, color:"#f8fafc", lineHeight:1.6, whiteSpace:"pre-wrap", wordBreak:"break-all", fontWeight:600 }}>{m.text}</div>
                           <div style={{ fontSize:11, color:"#334155", marginTop:8 }}>{formatDateTime(m.createdAt)}</div>
                         </div>
                       </div>
