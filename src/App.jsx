@@ -199,12 +199,12 @@ export default function App() {
             { key:"memo",   label:"📝 메모",   badge:memoList.length },
           ].map(t => (
             <button key={t.key} onClick={() => setTab(t.key)}
-              style={{ flex:1, padding:"12px 8px", border:"none", background:"transparent", cursor:"pointer",
-                color: tab===t.key?"#f59e0b":"#555", fontWeight: tab===t.key?900:600, fontSize:14,
-                borderBottom: tab===t.key?"2px solid #f59e0b":"2px solid transparent", marginBottom:-2,
-                display:"flex", alignItems:"center", justifyContent:"center", gap:6 }}>
+              style={{ flex:1, padding:"16px 8px", border:"none", background:"transparent", cursor:"pointer",
+                color: tab===t.key?"#f59e0b":"#555", fontWeight: tab===t.key?900:700, fontSize:24,
+                borderBottom: tab===t.key?"3px solid #f59e0b":"3px solid transparent", marginBottom:-2,
+                display:"flex", alignItems:"center", justifyContent:"center", gap:8, letterSpacing:"-0.5px" }}>
               {t.label}
-              {t.badge > 0 && <span style={{ background:tab===t.key?"#f59e0b":"#333", color:tab===t.key?"#000":"#888", borderRadius:20, padding:"1px 7px", fontSize:11, fontWeight:800 }}>{t.badge}</span>}
+              {t.badge > 0 && <span style={{ background:tab===t.key?"#f59e0b":"#333", color:tab===t.key?"#000":"#888", borderRadius:20, padding:"2px 9px", fontSize:15, fontWeight:800 }}>{t.badge}</span>}
             </button>
           ))}
         </div>
